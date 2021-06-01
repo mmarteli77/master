@@ -1,0 +1,4 @@
+PagePOM\LoginPage.class
+StepDefinitions\TestRunner.class
+StepDefinitions\GoogleSearchSteps.class
+StepDefinitions\LoginPOM.class
