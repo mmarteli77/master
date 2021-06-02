@@ -26,8 +26,8 @@ public class GoogleSearchSteps {
 		//driver = new FirefoxDriver();
 		
 		//System.setProperty("webdriver.chrome.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/chromedriver.exe");
-		//System.setProperty("webdriver.chrome.driver","./src/test/resources/Drivers/chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver","./src/test/resources/Drivers/Linux/chromedriver");		//linux
+		System.setProperty("webdriver.chrome.driver","./src/test/resources/Drivers/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver","./src/test/resources/Drivers/Linux/chromedriver");		//linux
 		ChromeOptions option = new ChromeOptions ();
 		option.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors"); 
 		//option.setHeadless(true); //launch Chrome browser as headless option2
