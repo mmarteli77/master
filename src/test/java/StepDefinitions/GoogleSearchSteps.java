@@ -25,8 +25,8 @@ public class GoogleSearchSteps {
 		//System.setProperty("webdriver.gecko.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/geckodriver.exe"); // launch FF
 		//driver = new FirefoxDriver();
 		
-		//System.setProperty("webdriver.chrome.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/Linux/chromedriver");		//linux
+		System.setProperty("webdriver.chrome.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/Linux/chromedriver");		//linux
 		ChromeOptions option = new ChromeOptions ();
 		option.setHeadless(true); //launch Chrome browser as headless option2
 		driver = new ChromeDriver(option);
