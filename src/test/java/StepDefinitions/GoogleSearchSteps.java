@@ -7,6 +7,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.cucumber.java.en.*;
 
@@ -21,12 +22,15 @@ public class GoogleSearchSteps {
 	@Given("browser is open")
 	public void browser_is_open()  {
 		System.out.println("inside the step browser is open");
-		System.setProperty("webdriver.chrome.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/chromedriver.exe");
-		ChromeOptions option = new ChromeOptions ();
-		option.addArguments("headless");
+		System.setProperty("webdriver.gecko.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/geckodriver.exe"); // launch FF
+		driver = new FirefoxDriver();
+		//System.setProperty("webdriver.chrome.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/chromedriver.exe");
+		//ChromeOptions option = new ChromeOptions ();
+		//option.addArguments("headless"); //launch Chrome browser as headless
+		//driver = new ChromeDriver();
 		
-		driver = new ChromeDriver(option);
 		driver.manage().window().maximize();
+		
 		
 	}
 
