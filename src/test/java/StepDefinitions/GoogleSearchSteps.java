@@ -22,13 +22,13 @@ public class GoogleSearchSteps {
 	@Given("browser is open")
 	public void browser_is_open()  {
 		System.out.println("inside the step browser is open");
-		System.setProperty("webdriver.gecko.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/geckodriver.exe"); // launch FF
-		driver = new FirefoxDriver();
-		//System.setProperty("webdriver.chrome.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/chromedriver.exe");
-		//ChromeOptions option = new ChromeOptions ();
-		//option.addArguments("headless"); //launch Chrome browser as headless
-		//driver = new ChromeDriver();
+		//System.setProperty("webdriver.gecko.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/geckodriver.exe"); // launch FF
+		//driver = new FirefoxDriver();
 		
+		System.setProperty("webdriver.chrome.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/chromedriver.exe");
+		ChromeOptions option = new ChromeOptions ();
+		option.setHeadless(true); //launch Chrome browser as headless option2
+		driver = new ChromeDriver(option);
 		driver.manage().window().maximize();
 		
 		
