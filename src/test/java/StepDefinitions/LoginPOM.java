@@ -20,7 +20,7 @@ public class LoginPOM {
 		
 		System.out.println("====================This test is with LoginPOM ==========================");
 	    
-	    System.setProperty("webdriver.chrome.driver", "C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/chromedriver.exe");
+	    System.setProperty("webdriver.chrome.driver", "C://eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/chromedriver.exe");
 	    driver = new ChromeDriver();
 	    driver.manage().window().maximize();
 	    

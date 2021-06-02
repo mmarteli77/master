@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.cucumber.java.en.*;
 
@@ -21,7 +22,10 @@ public class GoogleSearchSteps {
 	public void browser_is_open()  {
 		System.out.println("inside the step browser is open");
 		System.setProperty("webdriver.chrome.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/chromedriver.exe");
-		driver = new ChromeDriver();
+		ChromeOptions option = new ChromeOptions ();
+		option.addArguments("headless");
+		
+		driver = new ChromeDriver(option);
 		driver.manage().window().maximize();
 		
 	}
